@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+section{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    background: #121212;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+}
+.circle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(71, 60, 60);
+    clip-path: circle(50% at bottom left);
+}
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header .logo{
+    position: relative;
+    max-width: 150px;
+}
+header .navegation ul{
+    position: relative;
+    display: flex;
+}
+header .navegation li{
+    list-style: none;
+}
+header .navegation li a{
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 19px;
+    margin-left: 100px;
+}
+.servicos ul{
+    margin-top: 5rem;
+    width:100%;
+    margin-bottom: 5rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 2rem;
+}
+.servicos img {
+    width: 14rem;
+    height: 10rem;
+    opacity: 0.8;
+    border-radius: .4rem;
+    padding-bottom: .5rem;
+    background-color: #222;
+    list-style: none;
+}
+.servicos a {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    color: #222;
+    text-decoration: none;
+    padding-bottom: 1rem ;
+    max-width: 20rem;
+    box-shadow: 5px 5px 5px 5px var(--grayligth-color);
+    list-style: none;
+}
+.servicos a h2{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    color: #fff;
+    text-decoration: none;
+    padding-bottom: 1rem ;
+    max-width: 20rem;
+    box-shadow: 5px 5px 5px 5px var(--grayligth-color);
+    list-style: none;
+}
+.icones{
+    position: absolute;
+    bottom: 40px;
+    right: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.icones li{
+    list-style: none;
+}
+.icones li a{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 500%;
+    margin-left: 30px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    transition: 0.3s ease-in-out;
+}
